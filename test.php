@@ -1,5 +1,4 @@
 
-=======
 adsadads
 sdadsada
 adsadadsdasdadas
@@ -11,4 +10,13 @@ sdadsada
 adsadadsdasdadas
 adsadadsdasdadasad
 adsadasdads Antonio Sergio
->>>>>>> 76268c4c4830db4ab12309719de07c619127213a
+76268c4c4830db4ab12309719de07c619127213a
+
+
+
+
+
+
+
+
+awdaw
