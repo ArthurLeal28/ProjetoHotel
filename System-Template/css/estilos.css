@@ -1,0 +1,32 @@
+@import "https://pro.fontawesome.com/releases/v5.10.0/css/all.css";
+.error {
+	color: red;
+	font-size: 14px; 
+}
+
+.tela{
+	max-width: 95%;
+}
+body{
+	background-color: rgb(9, 13, 37);
+}
+.tabela{
+	margin-top: 1%;
+	background-color: rgb(1, 22, 59);
+	
+	border-radius: 1%;
+}
+.forms{
+	margin-top: 1%;
+	background-color: rgb(1, 22, 59);
+	color: white;
+	border-radius: 1%;
+}
+input:disabled {
+	color: red;
+	background-color:black;
+}
+
+.desabilitar{
+	background-color: grey;
+}
