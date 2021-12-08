@@ -1,3 +1,8 @@
 aaaa
+<<<<<<< HEAD
 bbbb1
 cccc
+=======
+bbbb2
+ddd
+>>>>>>> eaa2e7ebb5b35288cd1982ebdbe3bf34dcab4825
