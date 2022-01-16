@@ -16,7 +16,7 @@
 
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="#">NOTEL Resorts</a>
+			<a class="navbar-brand" href="#">NOTE Resorts</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -51,7 +51,7 @@
 	        <table id="tabela" class="table">
 	            <thead class="thead-dark">
 	                <tr>
-	                    <th>Quarto</th>
+	                    <th>Nº Quarto</th>
 	                    <th>Tipo quarto</th>
 						<th>Nivel quarto</th>
                         <th>Tipo de cama</th>
@@ -63,7 +63,7 @@
 	                <?php	
 						foreach($registros as $registro){
 							echo "<tr>"; 
-							echo "<td> {$registro['nome']} </td>";
+							echo "<td> {$registro['idQuarto']} </td>";
 							echo "<td> {$registro['tpquarto']} </td>";
                             echo "<td> {$registro['nivelquarto']} </td>";
                             echo "<td> {$registro['tpcama']} </td>";

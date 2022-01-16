@@ -1,5 +1,4 @@
 <?php
-    //Arthur Carvalho
     session_start();
 ?>
 <html lang="pt-br">

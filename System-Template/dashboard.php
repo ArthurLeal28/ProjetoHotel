@@ -22,10 +22,6 @@ include_once('verifica.php');
         <title>Cadastro</title>
         <link rel='stylesheet' type='text/css' href='css/estilo.css'>
         <link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
-        <link href='lib/main.css' rel='stylesheet' />
-        <script src='lib/main.js'></script>
-        <script src='lib/locales/pt-br.js'></script>
-        <script src='lib/calendario.js'></script>
     </head>
     <body>
         <div class='container'>

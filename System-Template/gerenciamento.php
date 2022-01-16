@@ -46,21 +46,6 @@ include_once('verifica.php');
                             </div>
                         </div>
                         
-                        <div class="col-md">
-                            <div class="card mb-4 shadow-sm text-center">
-                                <img class="card-img-top" src="imagens/agendar.jpg" height='180px' width='100px' alt="Imagem de capa do card">    
-                                <div class="card-body">
-                                    <h5 class="card-title">Agendamento de Quartos</h5>
-                                    <p class="card-text">Esta página permite ao administrador fazer agendamentos de quartos para clientes e consultar os quartos que ja foram reservados .</p>
-                                    <br>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                    <a href="https://lealdigitalmarketing.000webhostapp.com/CrudsAgendamento/AgendamentoTabela.php" class="btn btn-primary">Consultar</a>
-                                    <a href="https://lealdigitalmarketing.000webhostapp.com/CrudsAgendamento/AgendamentoFormulario.php" class="btn btn-success">Cadastrar</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
                        
 
                     </div>

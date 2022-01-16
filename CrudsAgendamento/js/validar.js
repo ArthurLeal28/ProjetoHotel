@@ -1,89 +1,55 @@
-
 $(document).ready(function(){
+	$('#preco').mask("#.##0.00", {reverse: true});
+
 	
-
 });
-
-function mudarValor(){
-    var preco = document.getElementById("preco");
-    
-}
-
-function validaDatas(){
-    var dataInicial = new Date($("input[name='dtEntrada']").val());
-    var dataFinal = new Date($("input[name='dtSaida']").val());
-    if (!dataInicial || !dataFinal) return false;
-    if (dataInicial >= dataFinal) {
-        alert("A data de entrada nao pode ser maior que a de saida!");
-        return false;
-    } else {
-        return true
-    }
-}
-
 
 $("#formulario").validate(
 	{
 
 		rules:{
-			state:{
+			servico:{
 				required:true	   
 			},
-			cliente:{
-				required:true	   
-			},
-			pagamento:{
+			desc:{
 				required:true   
 			},
-			quarto:{
+			preco:{
 				required:true   
 			},
-            qtdA:{
+            qtd:{
 				required:true  
 			},
-            end:{
+            tempo:{
 				required:true 
 			},
-			start:{
+			gridRadios:{
 				required:true
 			},
-			dtEntrada:{
-				required:true
-			},
-			dtSaida: { 
+			gridRadios2:{
 				required:true
 			}
 							
 		}, 
 		messages:{
-			state:{
+			servico:{
 				required:"Campo obrigatório"
 			},
-			cliente:{
+			desc:{
 				required:"Campo obrigatório"
 			},
-			dtEntrada:{
+			preco:{
 				required:"Campo obrigatório"
 			},
-			pagamento:{
-				required:"Campo obrigatório"
-			},
-			quarto:{
-				required:"Campo obrigatório"
-			},
-            qtdA:{
+            qtd:{
 				required:"Campo obrigatório"
 			},	
-            end:{
+            tempo:{
 				required:"Campo obrigatório"
 			},
-			start:{
+			gridRadios:{
 				required:"Campo obrigatório"
 			},
-			dtSaida:{
-				required:"Campo obrigatório",
-				
-			}
 		}
 		
 	}
