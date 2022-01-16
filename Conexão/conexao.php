@@ -24,7 +24,7 @@ if($row == 1) {
 	    $_SESSION['usuario'] = $usuario;
 	    $_SESSION['adm'] = $result['adm'];
         
-	    header('Location: https://lealdigitalmarketing.000webhostapp.com/System-Template/dashboard.php');
+	    header('Location: ../System-Template/dashboard.php');
 	    exit();
 	
 } else {

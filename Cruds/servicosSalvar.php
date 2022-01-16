@@ -17,6 +17,6 @@ include('servicosCrud.php');
         $tempo = $_POST['tempo'];
     }
     salvarServicos($idServico,$servico,$desc,$preco,$qtd,$tempo);
-    header('Location: https://lealdigitalmarketing.000webhostapp.com/Cruds/servicosTabela.php');
+    header('Location: ../Cruds/servicosTabela.php');
 
 ?>

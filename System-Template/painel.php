@@ -7,7 +7,7 @@ include_once('verifica.php');
 ?>          
             <script>window.location.replace("../index.php");</script>
 <?php
-            exit();
+           
         }
     }
     include_once('dashboard.php');

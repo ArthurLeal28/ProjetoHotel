@@ -19,7 +19,7 @@ include('servicosCrud.php');
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="https://lealdigitalmarketing.000webhostapp.com/System-Template/dashboard.php">Home <span class="sr-only">(Página atual)</span></a>
+                <a class="nav-link" href="../System-Template/dashboard.php">Home <span class="sr-only">(Página atual)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Destaques</a>
@@ -117,7 +117,7 @@ include('servicosCrud.php');
             </table>
             <div class="row form-group">
 						<div class="col-md-12">
-							<a href="https://lealdigitalmarketing.000webhostapp.com/System-Template/dashboard.php" class="btn btn-primary float-right mr-2">Voltar</a>											
+							<a href="../System-Template/dashboard.php" class="btn btn-primary float-right mr-2">Voltar</a>											
 						</div>	
             </div>
         </div>

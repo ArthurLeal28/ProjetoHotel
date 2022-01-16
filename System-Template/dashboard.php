@@ -22,6 +22,10 @@ include_once('verifica.php');
         <title>Cadastro</title>
         <link rel='stylesheet' type='text/css' href='css/estilo.css'>
         <link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
+        <link href='lib/main.css' rel='stylesheet' />
+        <script src='lib/main.js'></script>
+        <script src='lib/locales/pt-br.js'></script>
+        <script src='lib/calendario.js'></script>
     </head>
     <body>
         <div class='container'>
@@ -34,25 +38,25 @@ include_once('verifica.php');
                         </a><!--Link1-->
                     </li><!--Lista1-->
                     <li class='<?php echo $ativo1;?>'>
-                        <a href='https://lealdigitalmarketing.000webhostapp.com/System-Template/painel.php?pag=1' >
+                        <a href='../System-Template/painel.php?pag=1' >
                         <span class='icone fas fa-home'></span>
                         <span class='titulo'>Dashboard</span>
                         </a><!--Link2-->
                     </li><!--Lista2-->
                     <li class='<?php echo $ativo2;?>'>
-                        <a href='https://lealdigitalmarketing.000webhostapp.com/System-Template/painel.php?pag=2'>
+                        <a href='../System-Template/painel.php?pag=2'>
                         <span class='icone fas fa-file-chart-line'></span>
                         <span class='titulo'>Relatorios</span>
                         </a><!--Link3-->
                     </li><!--Lista3-->
                     <li class='<?php echo $ativo3;?>'>
-                        <a href='https://lealdigitalmarketing.000webhostapp.com/System-Template/painel.php?pag=3'>
+                        <a href='../System-Template/painel.php?pag=3'>
                         <span class='icone fas fa-tasks-alt'></span>
                         <span class='titulo'>Gerenciamento</span>
                         </a><!--Link4-->
                     </li><!--Lista4-->
                     <li value>
-                        <a href='https://lealdigitalmarketing.000webhostapp.com/System-Template/logout.php'>
+                        <a href='../System-Template/logout.php'>
                         <span class='icone fas fa-sign-out-alt'></span>
                         <span class='titulo'>Sair</span>
                         </a><!--Link5-->

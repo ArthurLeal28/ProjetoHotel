@@ -13,7 +13,7 @@
       selectMirror: true,
       editable:true,
       eventLimit: true,
-      events:'listaeventos.php',
+      events:'lib/listaeventos.php',
 
 
 
