@@ -19,7 +19,7 @@ include('AgendamentoCrud.php');
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="https://lealdigitalmarketing.000webhostapp.com/System-Template/dashboard.php">Home <span class="sr-only">(Página atual)</span></a>
+                <a class="nav-link" href="../System-Template/dashboard.php">Home <span class="sr-only">(Página atual)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Destaques</a>
@@ -56,7 +56,6 @@ include('AgendamentoCrud.php');
                             <th>Data Saida</th>
                             <th>Cliente</th>
                             <th>Nome</th>
-                            <th>N°Quarto</th>
                             <th></th>
                             <th></th>
                             
@@ -72,7 +71,6 @@ include('AgendamentoCrud.php');
                             echo "<td> {$registro['dtSaida']} </td>";
 							echo "<td> {$registro['idUsuario']} </td>";
 							echo "<td> {$registro['nome']} </td>";
-                            echo "<td> {$registro['nomeQ']} </td>";
 							echo "<td><a href='AgendamentoExcluir.php?idReserva={$registro['idReserva']}'class='btn btn-danger float-right'  onclick=\"return confirm('Tem certeza que deseja deletar essa reserva?'); return false;\"'><i class='fas fa-trash'></i>Excluir</a ></td>";							
 							echo "<td><a href='AgendamentoFormulario.php?idReserva={$registro['idReserva']}'class='btn btn-warning float-right mr-1'> Editar</a> </td>";
 							echo "</tr>"; 
@@ -82,7 +80,7 @@ include('AgendamentoCrud.php');
             </table>
             <div class="row form-group">
 						<div class="col-md-12">
-							<a href="https://lealdigitalmarketing.000webhostapp.com/System-Template/dashboard.php" class="btn btn-primary float-right mr-2">Voltar</a>											
+							<a href="../System-Template/dashboard.php" class="btn btn-primary float-right mr-2">Voltar</a>											
 						</div>	
             </div>
         </div>

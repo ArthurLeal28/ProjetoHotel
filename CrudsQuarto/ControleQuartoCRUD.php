@@ -1,12 +1,12 @@
 <?php
     include_once "bancoDadosCRUD.php";
 
-    function salvarQuarto($idQuarto, $tpquarto, $nivelquarto, $tpcama, $descricao, $preco){
+    function salvarQuarto($idQuarto, $tpquarto, $nivelquarto, $tpcama, $descricao, $preco,$nome){
 
         $conexao = criarConexao();
 
         if($idQuarto == 0){
-            $sql = "INSERT INTO quarto(tpquarto, nivelquarto, tpcama, descricao, preco) VALUES(:tpquarto, :nivelquarto, :tpcama, :descricao, :preco);";
+            $sql = "INSERT INTO quarto(tpquarto, nivelquarto, tpcama, descricao, preco, nomeQ) VALUES(:tpquarto, :nivelquarto, :tpcama, :descricao, :preco,:nome);";
             $sentenca = $conexao->prepare($sql);
 
             $sentenca->bindValue(':tpquarto', $tpquarto); 
@@ -14,6 +14,7 @@
             $sentenca->bindValue(':tpcama', $tpcama); 
             $sentenca->bindValue(':descricao', $descricao);
             $sentenca->bindValue(':preco', $preco);  
+            $sentenca->bindValue(':nome', $nome); 
 
         }else{
             $sql = "UPDATE quarto SET tpquarto = :tpquarto, nivelquarto = :nivelquarto, tpcama = :tpcama, descricao = :descricao, preco = :preco WHERE idQuarto = :idQuarto;";

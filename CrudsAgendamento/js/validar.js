@@ -1,55 +1,109 @@
 $(document).ready(function(){
-	$('#preco').mask("#.##0.00", {reverse: true});
-
 	
+
 });
 
+jQuery.validator.addMethod("greaterThan", 
+function(value, element, params) {
+
+    var dataInicial = new Date($("input[name='dtEntrada']").val());
+    var dataFinal = new Date($("input[name='dtSaida']").val());
+    if (!dataInicial || !dataFinal) return false;
+    if (dataInicial >= dataFinal) {
+        alert("A data de entrada nao pode ser maior que a de saida!");
+        return false;
+    } else {
+        return true
+    } 
+},);
+
+function mudarValor(){
+    var preco = document.getElementById("preco");
+    
+}
+
+$("#formulario2").validate(
+	{
+		rules:{
+		idQuarto:{
+			required:true
+		}
+		},
+		messages:{
+			idQuarto:{
+				required:"Campo obrigatório"
+			}
+		}
+
+	}
+	);
 $("#formulario").validate(
 	{
 
 		rules:{
-			servico:{
+			state:{
 				required:true	   
 			},
-			desc:{
+			cliente:{
+				required:true	   
+			},
+			pagamento:{
 				required:true   
 			},
-			preco:{
+			quarto:{
 				required:true   
 			},
-            qtd:{
+            qtdA:{
 				required:true  
 			},
-            tempo:{
+            end:{
 				required:true 
 			},
-			gridRadios:{
+			start:{
 				required:true
 			},
-			gridRadios2:{
+			dtEntrada:{
 				required:true
-			}
+			},
+			dtSaida: { 
+				greaterThan: "Data de Entrada",
+				required:true
+			},
+			
 							
 		}, 
 		messages:{
-			servico:{
+			state:{
 				required:"Campo obrigatório"
 			},
-			desc:{
+			cliente:{
 				required:"Campo obrigatório"
 			},
-			preco:{
+			dtEntrada:{
 				required:"Campo obrigatório"
 			},
-            qtd:{
+			pagamento:{
+				required:"Campo obrigatório"
+			},
+			quarto:{
+				required:"Campo obrigatório"
+			},
+            qtdA:{
 				required:"Campo obrigatório"
 			},	
-            tempo:{
+            end:{
 				required:"Campo obrigatório"
 			},
-			gridRadios:{
+			start:{
 				required:"Campo obrigatório"
 			},
+			dtSaida:{
+				required:"Campo obrigatório",
+				greaterThan:'A data de saida tem que ser maior que a de entrada'
+			},
+			idQuarto:{
+				required:"Campo obrigatório"
+			}
 		}
 		
 	}

@@ -30,3 +30,6 @@ input:disabled {
 .desabilitar{
 	background-color: grey;
 }
+tbody{
+	background-color: white;
+}

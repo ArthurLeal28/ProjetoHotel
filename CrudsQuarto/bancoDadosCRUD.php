@@ -5,6 +5,5 @@
     function criarConexao(){
         $conexao = NEW PDO('mysql:host=localhost;dbname=hotel',USUARIO,SENHA) OR die("Nao foi possivel conectar");
         return $conexao;
-        echo 'Teste';
     }
 ?>

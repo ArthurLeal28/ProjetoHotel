@@ -1,15 +1,14 @@
 <?php			
 	include_once "ControleQuartoCRUD.php";
-	
 	$idQuarto = $_POST['idQuarto'];
 	$tpquarto = $_POST['tpquarto'];
 	$nivelquarto = $_POST['nivelquarto'];
 	$tpcama = $_POST['tpcama'];
 	$descricao = $_POST['descricao'];
 	$preco = $_POST['preco'];
-	$quantidade = salvarQuarto($idQuarto, $tpquarto, $nivelquarto, $tpcama, $descricao, $preco);
+	$nome = $_POST['nome'];
+	$quantidade = salvarQuarto($idQuarto, $tpquarto, $nivelquarto, $tpcama, $descricao, $preco,$nome);
 
-	echo"<script>alert($quantidade);</script>";
 	if($quantidade > 0){
 
 		echo  "<script>alert('Registro salvo com sucesso!');</script>";

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('#preco').mask("###.00", {reverse: true});
+	$('#preco').mask("#.##0.00", {reverse: true});
 });
 
 $("#formulario").validate(
